@@ -1,14 +1,11 @@
-#Mi proyecto web "cocinando con Naty(cuatrimestral)
+# Mi primer pagina web: "Torta Matera"(cuatrimestral)
 ##Descripcion
-Este proyecto se basa en una pagina web hecha exclusivamente para los amantes a la reposteria
+Este proyecto se trata de una pagina web referida a como realizar una torta matera
 ##Contenido
--Menu principal donde contamos como elaboramos nuestras tortas materas
--contiene la receta completa
--foto
--videos de su elaboracion
--Una tabla con diferentes tortas e ingredientes
--Un formulario para completar en forma didactica
--Nuestros enlaces de nuestras redes sociales
+-Un menu principal donde pueden acceder a cada parte de la pagina
+-Contiene informacion sobre cada paso a dar
+-imagenes y video sobre el procediemiento y prepacion de la torta
+
 ##Autor
-Soto Natalia.
--
+Natalia soto
+>>>>>>> 89afec4cef2d29538aa1d11f89163223c52a97fd
