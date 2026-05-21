@@ -32,37 +32,20 @@ h3{
 }
   p{
     text-align:justify;
-}:root {
---colorprimario: beige;
+  }
+
+ th{
+   color:blueviolet;
+   text-align:left;
+   font-weight: bold ;
+  }
+ main section #Tabla{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:row ;
+    gap: 50px;
 }
 
-body {
-    background-color: var(--colorprimario);
 
-}
-
-.TM { 
-    font-family: "Manufacturing Consent", system-ui;
-    text-align: center;
-    font-size: 100px;
-    
-}
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-header {
-    background-color:rgb(207, 245, 207);
-    border-radius:  50px;
-    border-style: solid;
-
-}
-ul a {
-    color: black;
-    text-decoration: none;
-
-}
-ul a:hover {
-    cursor: pointer;
-    color: blue;
-}
+  }
