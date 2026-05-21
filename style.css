@@ -56,8 +56,18 @@ header {
     cursor: pointer;
     color: blue;
 }
-#Tabla th {
-    border-color: blueviolet;
-    border-width: 5px;
+#tabla {
+    border-color: blue;
+    border:5px solid;
 
+}
+#tabla th{
+    color:blueviolet;
+    border: 5px;    
+}
+#tabla td,th{ 
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
 }
