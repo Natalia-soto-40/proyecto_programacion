@@ -1,0 +1,23 @@
+body {
+    background-color:rgb(223, 245, 220)/*usando la variable para el color de fondo*/
+}
+h1, h2 {
+    color:black;
+    text-align: center;
+}
+main h2{
+    color: rgb(19, 14, 2);
+}
+ol{
+    width: 15%;
+    margin:auto;
+    color: black;
+    text-align: left;
+}
+h3{
+    color: black;
+    text-align:left;
+}
+  p{
+    text-align:justify;
+}
