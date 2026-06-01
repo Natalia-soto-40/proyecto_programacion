@@ -20,22 +20,23 @@ main h2{
 ol{
     
     background-color: #fcfcfc;
-    border: 2px solid #8b8b8b;
-    border-radius: 8px;
+    border: 2px solid #ee670d;
+    border-radius: 16px;
     max-width: 350px;
     margin:20px auto;
     padding: 20px 30px;
-    box-shadow:0px 4px 8px rgba(0,0,0,0,1);
+    box-shadow:0px 4px 8px rgb(216, 132, 7);
 }
 
 h3{
     color: #020a02e7;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    padding: 10px 10px;
+
 }
   p{
-    text-align:justify;
+    text-align:center;   
     color: blueviolet;
 
 }
@@ -121,16 +122,29 @@ header {
 .boton:active{
     transform: translateY(0);/*baja*/
 }
-   
-
-   
-
-
-
-
-    }
-
-
-
-
+ #Paso1 h3,#Paso2 h3,#Paso3 h3,#Paso4 h3, #Paso4 h3,#Paso5 h3,#Paso6 h3 {
+    background-color: aliceblue;
+    border:2px solid #f38116;
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    max-width: 350px;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px 5px 20px;
+    box-shadow: 0px -2px 5px rgb(0, 0, 0,0.05);
+    text-align: center;
+ }
+#Paso1 p, #Paso2 p, #Paso3 p, #Paso4 p,#Paso5 p, #Paso6 p{
+    background-color: aliceblue;
+    border:2px solid#f38116;
+    border-top: none;
+    border-radius:0 0 16px 16px;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+    padding: 5px 20px 15px 20px;
+    text-align: center;
 }
+   
+
+
+
+
