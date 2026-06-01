@@ -1,8 +1,8 @@
-:root {
---colorprimario: rgb(14, 221, 49);
---colorfondo:rgb(245, 224, 220);
+:root {/*lugar donde define variable*/
+--colorprimario: rgb(14, 221, 49);/*variables donde guardo color principal */
+--colorfondo:rgba(236, 47, 14, 0.356);/*guarda color de fondo de la pagina*/
 --letratitulo:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-
+/*guarda la fuente que se usa para los titulos*/
 }
 
 body{
@@ -17,57 +17,120 @@ main h2{
     color: rgb(19, 14, 2);
     font-family:var(--letratitulo);
 }
+ol{
+    
+    background-color: #fcfcfc;
+    border: 2px solid #8b8b8b;
+    border-radius: 8px;
+    max-width: 350px;
+    margin:20px auto;
+    padding: 20px 30px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0,1);
+}
 
 h3{
-    color: rgb(30, 211, 23);
-    text-align:left;
+    color: #020a02e7;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
   p{
     text-align:justify;
+    color: blueviolet;
+
 }
 
-.TM { 
+.TM { /*clases*/
     font-family: "Manufacturing Consent", system-ui;
     text-align: center;
     font-size: 100px;
-    
 }
+
 
 header {
-    background-color:rgb(207, 245, 207);
-    border-radius:  50px;
-    border-style: solid;
+    background-color:antiquewhite;
+    border-radius:  15px;
+    border:saddlebrown solid ;
+   
 
 }
+
 .lista ul{
-    color:#1f1919;
+    color:hsl(325, 86%, 52%);
     list-style: none;
+    border: 5px solid #e7c52e;
+    border-radius: 10px;
+    margin: 10px; 
+
+
 
 }
 .lista li{
-    color: #1f1919;
+    color: hsl(22, 85%, 45%);
+    margin: 12px 0;
 }
 .lista a{
     text-decoration: none;
-    color:#1f1919;
+    color:#1f1919
+    font-size: 16px;
+    padding: 6px 14px;
+    display: inline-block;
+
+    
 
 }
 .lista a:hover {
     cursor: pointer;
-    color: blue;
+    color: #555;
+    
+
 }
 #tabla {
     border-color: blue;
     border:5px solid;
+    
 
 }
 #tabla th{
     color:blueviolet;
-    border: 5px;    
+    border: 5px;  
+
 }
 #tabla td,th{ 
     border-bottom: 4px solid black;
     border-top: 4px solid black;
     border-left: 4px solid black;
     border-right: 4px solid black;
+}
+.boton{/*boton con estilo*/
+    background-color: aquamarine;/*color de fondo*/
+    color: #1f1919;/*color de letras*/
+    font-size: 15px/*tamaño de letra*/
+    border: medium;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;/*que se vea distinto a pasar el cursor*/
+    margin-top: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;/*efecto suave al cambiar estilo*/
+}
+.boton:hover{
+    background-color: :rgb(12,85,150);
+    transform: translateY(-3P);/*sube un poquito el boton*/
+}
+.boton:active{
+    transform: translateY(0);/*baja*/
+}
+   
+
+   
+
+
+
+
+    }
+
+
+
+
 }
