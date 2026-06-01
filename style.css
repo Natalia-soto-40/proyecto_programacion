@@ -13,7 +13,7 @@ h1, h2 {
     text-align: center;
     font-family:var(--letratitulo);
 }
-main h2{
+main h2 {
     color: rgb(19, 14, 2);
     font-family:var(--letratitulo);
 }
@@ -72,7 +72,7 @@ header {
 }
 .lista a{
     text-decoration: none;
-    color:#1f1919
+    color:#1f1919;
     font-size: 16px;
     padding: 6px 14px;
     display: inline-block;
@@ -89,6 +89,8 @@ header {
 #tabla {
     border-color: blue;
     border:5px solid;
+    margin: 0 auto;
+
     
 
 }
@@ -102,11 +104,12 @@ header {
     border-top: 4px solid black;
     border-left: 4px solid black;
     border-right: 4px solid black;
+
 }
 .boton{/*boton con estilo*/
     background-color: aquamarine;/*color de fondo*/
     color: #1f1919;/*color de letras*/
-    font-size: 15px/*tamaño de letra*/
+    font-size: 15px;/*tamaño de letra*/
     border: medium;
     padding: 10px;
     border-radius: 10px;
@@ -116,7 +119,7 @@ header {
     transition: all 0.3s ease;/*efecto suave al cambiar estilo*/
 }
 .boton:hover{
-    background-color: :rgb(12,85,150);
+    background-color:rgb(12,85,150);
     transform: translateY(-3P);/*sube un poquito el boton*/
 }
 .boton:active{
@@ -144,7 +147,37 @@ header {
     text-align: center;
 }
    
-
-
-
-
+#imagen{
+    align-items: center;
+    margin-left: 550px;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    background-color: antiquewhite;
+    border-radius: 12px;
+}
+.enlase{
+    text-decoration: none;
+    color:rgb(59, 59, 95)
+}
+.enlase:hover {
+    color: rgb(47, 130, 103);
+}
+form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    gap:6px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 12px;
+    border-color: #bf4747;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: medium;
+}
