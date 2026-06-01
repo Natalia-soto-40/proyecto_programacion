@@ -181,3 +181,19 @@ input{
     margin-top: 0;
     font-size: medium;
 }
+#galeria-de-imagenes{
+    display: grid ;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    margin-left: 500px;
+    gap: 10px;
+    grid-template-rows: 300px 300px; 
+    width: 200px;
+
+    
+
+}
+#galeria-de-imagenes img{
+    width: 250px;
+    height: 250px;
+}
