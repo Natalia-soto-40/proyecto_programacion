@@ -119,18 +119,18 @@ header {
 }
 .boton:hover {
     background-color:rgb(12,85,150);
-    transform: translateY(-3P);/*sube un poquito el boton*/
+    transform: translateY(-3px);/*sube un poquito el boton*/
 }
 .boton:active {
     transform: translateY(0);/*baja*/
 }
  #Paso1 h3,#Paso2 h3,#Paso3 h3,#Paso4 h3, #Paso4 h3,#Paso5 h3,#Paso6 h3 {
     background-color: aliceblue;
-    border:2px solid #f38116;
-    border-bottom: none;
+    border:2px solid#f38116;
+    border-bottom: #fcfcfc;
     border-radius: 16px 16px 0 0;
     max-width: 350px;
-    margin: 20px auto 0 auto;
+    margin: 15px auto 0 auto;
     padding: 15px 20px 5px 20px;
     box-shadow: 0px -2px 5px rgb(0, 0, 0,0.05);
     text-align: center;
@@ -141,7 +141,7 @@ header {
     border-top: none;
     border-radius:0 0 16px 16px;
     max-width: 350px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     padding: 5px 20px 15px 20px;
     text-align: center;
 }
@@ -219,3 +219,22 @@ input{
 50% {transform: translateX(10px);}
 75% {transform: translateX(-10px);}
 100% {transform: translateX(0);}
+}
+.tarjeta {/*agrgegue tarjeta*/
+    background-color: #e9903c7e;
+    border: 2px solid #ec1c8f;
+    border-radius: 20px;
+    padding: 2px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.tarjeta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+#diseño-de-paso {
+    max-width: 350px;
+    margin: 0 auto;
+}
