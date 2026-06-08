@@ -1,12 +1,11 @@
-:root {/*lugar donde define variable*/
---colorprimario: rgb(14, 221, 49);/*variables donde guardo color principal */
---colorfondo:rgba(248, 7, 168, 0.884);/*guarda color de fondo de la pagina*/
+:root {
+--colorprimario: rgb(14, 221, 49);
+--colorfondo:rgba(248, 7, 148, 0.719);
 --letratitulo:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-/*guarda la fuente que se usa para los titulos*/
 }
 
 body {
-    background-color:var(--colorfondo);/*usando la variable para el color de fondo*/
+    background-color:rgba(240, 10, 240, 0.603)
 }
 h1, h2 {
     color:black;
@@ -19,13 +18,13 @@ main h2 {
 }
 ol {
     
-    background-color: #fcfcfc;
+    background-color: #f37208c2;
     border: 2px solid #ee670d;
     border-radius: 16px;
     max-width: 350px;
     margin:20px auto;
     padding: 20px 30px;
-    box-shadow:0px 4px 8px rgb(216, 132, 7);
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
@@ -37,12 +36,12 @@ h3 {
 }
   p {
     text-align:center;   
-    color: rgb(71, 39, 100);
+    color: rgb(111, 17, 199);
 
 }
 
-.TM { /*clases*/
-    font-family: "Manufacturing Consent", system-ui;
+.TM { 
+    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 100px;
 }
@@ -51,28 +50,25 @@ h3 {
 header {
     background-color:antiquewhite;
     border-radius:  15px;
-    border:saddlebrown solid ;
+    border:rgba(95, 235, 95, 0.281) solid ;
    
 
 }
 
 .lista ul {
-    color:hsl(325, 86%, 52%);
-    list-style: none;
-    border: 5px solid #e7c52e;
-    border-radius: 10px;
-    margin: 10px; 
-
-
+   display: block;
+   justify-content: center;
+   gap: 15px;
+   list-style: none;
 
 }
 .lista li {
-    color: hsl(22, 85%, 45%);
+    color: hsla(323, 85%, 45%, 0.11);
     margin: 12px 0;
 }
 .lista a {
     text-decoration: none;
-    color:#1f1919;
+    color:#4113e7;
     font-size: 16px;
     padding: 6px 14px;
     display: inline-block;
@@ -86,16 +82,12 @@ header {
 
 }
 #tabla {
-    border-color: blue;
     border:5px solid;
     margin: 0 auto;
-
-    
-
 }
 #tabla th {
-    color:rgb(1, 14, 4);
-    border: 5px;  
+    color:rgb(0, 8, 2);
+    border: 5px solid rgb(5, 4, 22) 
 
 }
 #tabla td,th { 
@@ -106,53 +98,64 @@ header {
 
 }
 .boton {/*boton con estilo*/
-    background-color: aquamarine;/*color de fondo*/
-    color: #1f1919;/*color de letras*/
-    font-size: 15px;/*tamaño de letra*/
-    border: medium;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;/*que se vea distinto a pasar el cursor*/
-    margin-top: 15px;
-    font-weight: 500;
-    transition: all 0.3s ease;/*efecto suave al cambiar estilo*/
+   transition: all 0.3s ease;
 }
-.boton:hover {
-    background-color:rgb(12,85,150);
-    transform: translateY(-3px);/*sube un poquito el boton*/
+.boton:hover {/*boton hover*/
+    transform: translateY(-3px);
 }
-.boton:active {
-    transform: translateY(0);/*baja*/
-}
- #Paso1 h3,#Paso2 h3,#Paso3 h3,#Paso4 h3, #Paso4 h3,#Paso5 h3,#Paso6 h3 {
-    background-color: aliceblue;
-    border:2px solid#f38116;
+
+ #paso1 h3,#paso2 h3,#paso3 h3, #paso4 h3,#paso5 h3,#paso6 h3 {
+    background-color: rgba(233, 30, 98, 0.596);
+    border: 2px solid #181615;
     border-bottom: #fcfcfc;
     border-radius: 16px 16px 0 0;
     max-width: 350px;
     margin: 15px auto 0 auto;
     padding: 15px 20px 5px 20px;
-    box-shadow: 0px -2px 5px rgb(0, 0, 0,0.05);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0,0.05);
     text-align: center;
+    color: white;
  }
-#Paso1 p, #Paso2 p, #Paso3 p, #Paso4 p,#Paso5 p, #Paso6 p{
-    background-color: aliceblue;
-    border:2px solid#f38116;
+#paso1 p, #paso2 p, #paso3 p, #paso4 p,#paso5 p, #paso6 p{
+    background-color: rgba(233, 30, 98, 0.596);
+    border:2px solid#141414;
     border-top: none;
     border-radius:0 0 16px 16px;
     max-width: 350px;
     margin: 0 auto 15px auto;
     padding: 5px 20px 15px 20px;
     text-align: center;
+    color: #333;
 }
    
 #imagen {
-    align-items: center;
-    margin-left: 300px;
+    display: block;
+    margin-left:  auto;
+    margin-right: auto;
+    float: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    transform: translateX(-180px);
+    max-width: 250%;
+    height: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#imagen:hover {
+    transform: scale(1.05);
 }
 iframe{
     display: block;
     margin: 0 auto;
+}
+#video {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+    transform: translateX(-150px);
 }
 footer{
     background-color: antiquewhite;
@@ -182,21 +185,30 @@ input{
 }
 #galeria-de-imagenes {
     display: grid ;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    transform: translateX(-180px);
+    justify-items: center;
     align-items: center;
-    margin-left: 300px;
-    gap: 10px;
-    grid-template-rows: 300px 300px; 
-    width: 200px;    
-
+    position: relative;
+    
 }
 #galeria-de-imagenes img {
-    width: 250px;
-    height: 250px;
-    transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
-.img-crecer:hover {/*efectos hover individuales por imagen*/
-    transform: scale(1.08);
+/*efectos hover individuales por imagen*/
+.img-crecer:hover {
+        transform: scale(1.08);
 }
 .img-rotar:hover {
     transform: rotate(5deg);
@@ -213,6 +225,7 @@ input{
 .img-achicar:hover {
     transform: scale(0.95);
 }
+/*animacion*/
 @keyframes sacudir {
 0% {transform:translateX(0);}
 25% {transform:translateX(-10px);}
@@ -220,15 +233,15 @@ input{
 75% {transform: translateX(-10px);}
 100% {transform: translateX(0);}
 }
-.tarjeta {/*agrgegue tarjeta*/
-    background-color: #e9903c7e;
+/*agregue tarjeta*/
+.tarjeta {
+    background-color: #e9903c3d;
     border: 2px solid #ec1c8f;
     border-radius: 20px;
     padding: 2px 20px;
     margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 .tarjeta:hover{
     transform: translateY(-5px);
@@ -238,3 +251,35 @@ input{
     max-width: 350px;
     margin: 0 auto;
 }
+/*responsive tablet*/
+@media (max-width:768px) {
+    .TM {
+        font-size: 60px;
+    }
+#galeria-de-imagenes {
+    grid-template-columns: repeat(2,1fr);
+}
+}
+/*responsive celular*/
+@media (max-width:480px) {
+    .lista ul {
+        flex-direction:column;
+        align-items: center;
+    }
+    .TM {
+        font-size: 40px;
+    }
+    #galeria-de-imagenes {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+    form {
+        width: 90%;
+    }
+iframe {
+    width: 100%;
+    height: 250px;
+}
+}
+
